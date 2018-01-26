@@ -2,7 +2,6 @@
 title: "LocationToTimezone"
 author: "Javad Rahimipour Anaraki"
 date: '26/01/18'
-output: html_document
 ---
 
 ## Function
