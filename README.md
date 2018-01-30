@@ -27,6 +27,7 @@ LocationToTimezone <- function(Lat, Lon) {
 
 ```{r}
 LocationToTimezone(47.561389, -52.7125)
+[1] "America/St_Johns"
 ```
 
 ```{r}
