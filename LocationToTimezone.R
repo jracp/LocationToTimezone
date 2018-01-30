@@ -2,11 +2,7 @@
 # Ph.D. Candidate
 # Department of Computer Science
 # Memorial University of Newfoundland
-<<<<<<< HEAD
 # jra066 [AT] mun [DOT] ca | www.cs.mun.ca/~jra066
-=======
-jra066 [AT] mun [DOT] ca | www.cs.mun.ca/~jra066
->>>>>>> facb22bd45aa42eb69df8a5aa02204421b68353f
 
 #   input: Latitude, Longtitude
 #  output: Standard timezone ID
