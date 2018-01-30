@@ -41,6 +41,29 @@ LocationToTimezone(01.01, -01.01)
 NULL
 ```
 
+This function can be applied to a dataframe (e.g. "data" with Lat and Lon columns) using ```mapply``` as follows:
+```{r}
+results <- mapply(LocationToTimezone, data$latitude, data$longitude)
+head(results)
+[[1]]
+[1] "Europe/Andorra"
+
+[[2]]
+[1] "Asia/Dubai"
+
+[[3]]
+[1] "Asia/Kabul"
+
+[[4]]
+[1] "America/Antigua"
+
+[[5]]
+[1] "America/Anguilla"
+
+[[6]]
+[1] "Europe/Tirane"
+```
+
 ## Warning message
 You might get the following warning message due to incompatibilities coming from operating system, which can be ignored.
 
