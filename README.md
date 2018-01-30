@@ -32,11 +32,13 @@ LocationToTimezone(47.561389, -52.7125)
 
 ```{r}
 LocationToTimezone(53.620893, -123.830113)
+[1] "America/Vancouver"
 ```
 
 For invalid inputs `NULL` will be returned.
 ```{r}
 LocationToTimezone(01.01, -01.01)
+NULL
 ```
 
 ## Warning message
