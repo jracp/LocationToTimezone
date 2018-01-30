@@ -45,9 +45,9 @@ LocationToTimezone(01.01, -01.01)
 NULL
 ```
 
-This function can be applied to a dataframe (e.g. 'data' with Lat and Lon columns) using ```mapply``` as described in the following.
+This function can be applied to a dataframe (e.g. _data_ with Lat and Lon columns) using ```mapply``` as described in the following.
 
-In this example, the 'data' looks like this:
+In this example, 'data' looks like this:
 ```{r}
 head(data)
 test   latitude  longitude  class
@@ -58,7 +58,7 @@ test   latitude  longitude  class
      1 18.22055 -63.068615  B
      7 41.15333  20.168331  A
 ```
-Here, ```LocationToTimezone``` is applied to 'data' using ```mapply```:
+Here, ```LocationToTimezone``` is applied to _data_ using ```mapply```:
 ```{r}
 results <- mapply(LocationToTimezone, data$latitude, data$longitude)
 ```
