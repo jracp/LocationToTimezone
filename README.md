@@ -4,8 +4,8 @@ author: "Javad Rahimipour Anaraki"
 date: '26/01/18'
 ---
 
-## Usecase
-For dataset containing location (i.e. Lat and Lon), time, ... columns with the need of knowing actual timezone 
+## Use case
+For dataset containing location (i.e. Lat and Lon), time, ... columns with the need of knowing actual timezone to potentially be converted to a specific timezone, such as UTC
 
 
 ## Function
@@ -45,9 +45,26 @@ LocationToTimezone(01.01, -01.01)
 NULL
 ```
 
-This function can be applied to a dataframe (e.g. "data" with Lat and Lon columns) using ```mapply``` as follows:
+This function can be applied to a dataframe (e.g. 'data' with Lat and Lon columns) using ```mapply``` as described in the following.
+
+In this example, the 'data' looks like this:
+```{r}
+head(data)
+test   latitude  longitude  class
+     4 42.54624   1.601554  A
+     2 23.42408  53.847818  C
+     8 33.93911  67.709953  B
+     6 17.06082 -61.796428  A
+     1 18.22055 -63.068615  B
+     7 41.15333  20.168331  A
+```
+Here, ```LocationToTimezone``` is applied to 'data' using ```mapply```:
 ```{r}
 results <- mapply(LocationToTimezone, data$latitude, data$longitude)
+```
+
+Finally, the resulting timezones are as follows:
+```{r}
 head(results)
 [[1]]
 [1] "Europe/Andorra"
