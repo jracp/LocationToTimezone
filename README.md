@@ -4,6 +4,10 @@ author: "Javad Rahimipour Anaraki"
 date: '26/01/18'
 ---
 
+## Usecase
+For dataset containing location (i.e. Lat and Lon), time, ... columns with the need of knowing actual timezone 
+
+
 ## Function
 This function accepts decimal Lat and Lon as inputs and returns [standard timezone ID](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) using [Google Maps API](https://developers.google.com/maps/).
 
