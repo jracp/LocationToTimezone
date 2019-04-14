@@ -1,9 +1,3 @@
----
-title: "LocationToTimezone"
-author: "Javad Rahimipour Anaraki"
-date: '26/01/18'
----
-
 ## Use case
 For dataset containing location (i.e. Lat and Lon), time, ... columns with the need of knowing actual timezone to potentially be converted to a specific timezone, such as UTC
 
